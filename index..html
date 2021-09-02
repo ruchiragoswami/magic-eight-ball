@@ -10,14 +10,23 @@
     <div class="main-container"> 
         <h1> Magic Eight Ball </h1>
         <section> 
+
+
             <h2> Rules: </h2>
-            <p>  Write Rules here </p>
+            <ol>
+                <li> Type your question that can be answered in simple 'yes' or 'no' </li>
+                <li> Enter a number between 0 & 100 to shake the ball </li>
+                <li > Click 'play' button & get your reply </li>
+                <li> Use 'reset' button to play again </li>
+            </ol>
+
+            
         </section>
 
         <div> 
             
 
-
+            <h2> Type your question here: </h2>
             <textarea  id="userAsk"  >
                
             </textarea> 
@@ -26,12 +35,15 @@
 
             <button id="btn-play"> Play </button>
 
-            <p id="dispAsk">  </p>
+            <p id="dispAsk"> You asked:  </p>
 
             <p id="dispAns"> </p>
 
+            <p> <button id="btn-reset" > Reset the Game </button></p>
+
         </div>
 
+       
     </div>
 
 
