@@ -1,0 +1,15 @@
+body {
+    max-width: 900px;
+    margin: 0;
+    padding: 0; 
+}
+
+.main-container {
+    margin: 0 auto; 
+    border: 2px solid red; 
+    text-align: center;
+}
+
+ol {
+    text-align: left;
+}

@@ -1,18 +1,16 @@
 let userQuestion = document.querySelector("#userAsk");
-let userChoice = document.querySelector("#userResponse");
+// let userChoice = document.querySelector("#userResponse");
 let btnPlay = document.querySelector("#btn-play");
 let dispQuestion = document.querySelector("#dispAsk");
 let dispAnswer = document.querySelector("#dispAns");
 let btnReset = document.querySelector("#btn-reset");
 
- 
+
 
 // Function for the main logic of the game
 function findAnswer(choiceResponse) {
 
-    if (choiceResponse < 0 || choiceResponse >= 1001 ) {
-        return("Please enter a number between 0 & 1000");
-        } else if (choiceResponse <= 50 ) {
+    if (choiceResponse <= 50 ) {
         return("It is certain");
         }  else if (choiceResponse <=100) {
         return('It is decidedly so')
@@ -27,7 +25,7 @@ function findAnswer(choiceResponse) {
         } else if (choiceResponse <=350) {
             return(" Most Likely")
         } 
-     
+
       else if (choiceResponse <=400) {
         return('Outlook good')
       } else if (choiceResponse <=450) {
@@ -64,11 +62,13 @@ function findAnswer(choiceResponse) {
 
 // Click Handler = playClick 
 function playClick() {
-    dispQuestion.innerText = userQuestion.value;
+   dispQuestion.innerText = userQuestion.value;
 
-    let showAnswer = findAnswer(userChoice.value); 
+   let userChoice = (Math.random()) * 1000;
+   let showAnswer = findAnswer(userChoice); 
 
    dispAnswer.innerText = showAnswer; 
+   // userChoice = ; 
 }
 
 btnPlay.addEventListener("click", playClick);
@@ -76,8 +76,7 @@ btnPlay.addEventListener("click", playClick);
 
 // Reset Button
 function resetGame() {
-    console.log("Reset button clicked");
-    userChoice.value = null; 
+    console.log("Reset button clicked");   
     userQuestion.value = null ;
     dispQuestion.innerText = null; 
     dispAnswer.innerText = null ;
