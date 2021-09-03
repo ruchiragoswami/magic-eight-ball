@@ -1,9 +1,14 @@
 let userQuestion = document.querySelector("#userAsk");
 // let userChoice = document.querySelector("#userResponse");
 let btnPlay = document.querySelector("#btn-play");
-let dispQuestion = document.querySelector("#dispAsk");
+// let dispQuestion = document.querySelector("#dispAsk");
 let dispAnswer = document.querySelector("#dispAns");
 let btnReset = document.querySelector("#btn-reset");
+
+let hideSeek = document.querySelector(".user-reply");
+
+hideSeek.style.visibility="hidden";
+
 
 
 
@@ -62,13 +67,19 @@ function findAnswer(choiceResponse) {
 
 // Click Handler = playClick 
 function playClick() {
-   dispQuestion.innerText = userQuestion.value;
 
+   if (userQuestion.value.trim() == "") {
+       alert("Please write a question")
+   }
+   else{
+      hideSeek.style.visibility="visible"; 
+   // dispQuestion.innerText = userQuestion.value;
    let userChoice = (Math.random()) * 1000;
    let showAnswer = findAnswer(userChoice); 
-
    dispAnswer.innerText = showAnswer; 
    // userChoice = ; 
+   }
+   
 }
 
 btnPlay.addEventListener("click", playClick);
@@ -76,10 +87,13 @@ btnPlay.addEventListener("click", playClick);
 
 // Reset Button
 function resetGame() {
-    console.log("Reset button clicked");   
+    console.log("Reset button clicked");  
+    hideSeek.style.visibility="hidden";
+    
     userQuestion.value = null ;
-    dispQuestion.innerText = null; 
+   //  dispQuestion.innerText = null; 
     dispAnswer.innerText = null ;
+
 }
 
 btnReset.addEventListener("click", resetGame);
