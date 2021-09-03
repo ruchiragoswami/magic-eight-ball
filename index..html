@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,55 +8,49 @@
     <title>Magic 8 Ball -Ruchi</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="main-container"> 
+    <div class="main-container">
         <h1> Magic Eight Ball </h1>
 
         <img src="ball-gif-2.gif" alt="">
-        <section class='rules'> 
+        <section class='rules'>
             <h2> Rules </h2>
             <ol>
                 <li> Type a question that can be answered in simple 'yes' or 'no' </li>
-                <!-- <li> Enter a number between 0 & 1000 to shake the ball </li> -->
-                <li > Shake the ball & get your reply </li>
+
+                <li> Shake the ball & get your reply </li>
                 <li> Use 'reset' button to play again </li>
-            </ol>            
+            </ol>
         </section>
 
-        <div> 
-            
-            <section class="user-question"> 
-
+        <div>
+            <section class="user-question">
                 <h2> Type your question here: </h2>
-                <textarea name="userAsk"  id="userAsk" required>
-                
-                </textarea> 
+                <textarea name="userAsk" id="userAsk" required>
 
-                <!-- <input type="number" id="userResponse" /> -->
+                </textarea>
 
-                <button id="btn-play"> Shake the Ball  </button>
+                <button id="btn-play"> Shake the Ball </button>
+            </section>
 
+            <section class="user-reply">
+
+                <!-- <h2> Magic 8 Ball Says </h2> -->
+
+                <p id="dispAns"> </p>
 
             </section>
-                
-            <section class="user-reply"> 
 
-                <h2> Magic 8 Ball Says  </h2>
-
-                <p id="dispAns"> </p>                
-
-            </section>
-                
-            <div> 
-                <button id="btn-reset" > Reset  </button>
-            </div> 
+            <div>
+                <button id="btn-reset"> Reset </button>
+            </div>
 
         </div>
-
-       
     </div>
 
 
- <script src="script.js"></script> 
+    <script src="script.js"></script>
 </body>
+
 </html>

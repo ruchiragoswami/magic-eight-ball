@@ -1,56 +1,51 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
-
- */
- @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 :root {
-   --color-1: #FFEDDA;
-   --color-2: #1d98eb;
-   --color-3: #df9307;
-   --color-4: #FF2442;
-   --color-5: #fff; 
+    --color-1: #FFEDDA;
+    --color-2: #1d98eb;
+    --color-3: #f1f10b;
+    --color-4: #FF2442;
+    --color-5: #fff;
 }
 
-/* #FFB830;  #3DB2FF*/
 body {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0; 
-    font-family:Indie Flower ;
+    padding: 0;
+    font-family: Indie Flower;
     font-size: large;
-    /* font-family:Sedgwick Ave Display ; */
-
-    /* background-color: yellow; */
-    /* border: 2px solid blue;   */
+    background-color: var(--color-2);  
 }
 
 .main-container {
-    margin: 0 auto; 
-    padding: 2rem;
-    max-width: 600px;
-    /* border: 2px solid red;  */
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 600px;   
     text-align: center;
-    background-color: var(--color-2);
-    /* background-color: pink;  */
+      
 }
 
-h1, h2, h3 {
-    color:var(--color-5);
+h1,
+h2,
+h3 {
+    color: var(--color-3);
+}
+
+img {
+    width: 100px;
+    height: 100px; 
 }
 .rules {
-    padding: 0.5rem 0.1rem; 
-    color: var(--color-1);
-    /* border: 1px solid rgb(168, 157, 155);  */
-}   
+    padding: 0.5rem 0.1rem;
+    color: var(--color-1);    
+}
 
 
-ol {
-    /* width: 90%; */
+ol {    
     text-align: left;
     line-height: 1.7rem;
     margin: 0 auto;
-    font-family:'Times New Roman', Times, serif;
-    /* border: 1px solid green;  */
+    font-family: 'Times New Roman', Times, serif;    
 }
 
 textarea {
@@ -63,33 +58,25 @@ textarea {
     display: block;
     width: 100px;
     height: 100px;
-    margin: 2rem auto; 
-    /* padding: 1rem;  */
+    margin: 2rem auto;    
     border-radius: 50%;
     line-height: 1.5rem;
-    font-family:Indie Flower ;
+    font-family: Indie Flower;
     font-weight: 600;
     font-size: 1.5rem;
     background-color: var(--color-3);
-    color: var(--color-5);
+    color: var(--color-2);
 }
 
 .user-question>h2 {
-    margin: 1.5rem auto; 
+    margin: 1.5rem auto;
 }
 
-.user-reply {
-    /* border: 2px solid black; */
-    background-color: var(--color-1);
-    color: var(--color-4);
-    font-size: 2rem;
-    font-weight: 800;
-    margin-top: 1rem;
-    padding-top: 0.5rem; 
-    padding-bottom: 0.5rem ;
-}
-.user-reply>h2 {
-    color: var(--color-2);
+.user-reply {       
+    color: var(--color-3);
+    font-size: 1.5em;
+    font-weight: 600;    
+    padding-bottom: 0.5rem;
 }
 
 
